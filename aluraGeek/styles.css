@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 9.5rem;
+}
+
+.direita {
+    display: flex;
+    gap: 2rem;
+}
+
+.search__bar {
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 1.25rem;
+    color: #A2A2A2;
+    display: flex;
+    gap: .5rem;
+    padding: .5rem 1rem;
+}
+
+.search__input {
+    background-color: transparent;
+    border: none;
+    color: #A2A2A2;
+    font-size: .875rem;
+    width: 25vw;
+}
+
+.search__input::placeholder{
+    color: #A2A2A2;
+    font-size: .875rem;
+}
+
+.search__input:focus {
+    outline-style: none;
+}
+
+.search__button {
+    border: none;
+    background-color: transparent;
+    background-image: url(./assets/icone-de-lupa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+}
+
+.search__button:hover {
+    cursor: pointer;
+}
+
+.login__button {
+    border: 1px solid #2A7AE4;
+    padding: 1rem 4rem;
+    width: max-content;
+}
+
+.login__button button{
+    background-color: transparent;
+    border: none;
+    color: #2A7AE4;
+}
+
+.login__button:hover {
+    background-color: #D4E4FA;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.login__button button:hover {
+    cursor: pointer;
+}
+
+nav {
+    background-image: url(./assets/imagem-hero.jpeg);
+    background-position: center;
+    height: 352px;
+    padding: 2rem 9.5rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    gap: 1rem;
+    margin-top: 9.38rem;
+}
+
+.information__title {
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.information__strong {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.information__button {
+    background-color: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+    padding: 1rem;
+    width: max-content;
+}
+
+.information__button:hover {
+    background-color: #5595E9;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 9.5rem;
+}
+
+.products__section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.products__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product__see-all-link {
+    align-items: center;
+    color: #2A7AE4;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    gap: .5rem;
+    text-decoration: none;
+}
+
+.products__title {
+    color: #464646;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__image {
+    width: 176px;
+
+}
+
+.product__information {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+
+.product__title {
+    color: #464646;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.product__price {
+    color: #464646;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.product__link {
+    color: #2A7AE4;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__content {
+    align-items: flex-start;
+    background-color: #EAF2FD;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-content: space-between;
+    padding: 4rem 9.5rem;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__links-link {
+    color: #464646;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer__contacts-title {
+    color: #464646;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer__contacts-input {
+    background-color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    border-radius: .25rem;
+    color: #464646;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.footer__contacts-input:focus {
+    outline-style: none;
+}
+
+.footer__contacts-textarea {
+    resize: none;
+    padding: 1rem 1rem 2.3rem 1rem;
+    border: none;
+    border-radius: .25rem;
+    border-bottom: 1px solid #C8C8C8;
+    color: #464646;
+    font-size: 1rem;
+}
+
+.footer__contacts-textarea:focus {
+    outline-style: none;
+}
+
+.footer__contacts-button {
+    background-color: #2A7AE4;
+    padding: 1rem;
+    width: max-content;
+    border: none;
+    color: #FFFFFF;
+}
+
+.footer__contacts-button:hover {
+    cursor: pointer;
+}
+
+.footer__developer{
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 2rem;
+    text-align: center;
+}
