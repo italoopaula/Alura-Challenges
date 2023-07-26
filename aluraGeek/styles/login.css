@@ -23,7 +23,6 @@ header {
 .search__input {
     background-color: transparent;
     border: none;
-    color: #A2A2A2;
     font-size: .875rem;
     width: 25vw;
 }
@@ -51,6 +50,7 @@ header {
 }
 
 .login__button {
+    display: none;
     border: 1px solid #2A7AE4;
     padding: 1rem 4rem;
     width: max-content;
@@ -72,119 +72,57 @@ header {
     cursor: pointer;
 }
 
-nav {
-    background-image: url(./assets/imagem-hero.jpeg);
-    background-position: center;
-    height: 352px;
-    padding: 2rem 9.5rem;
-}
-
-.information {
+main {
+    align-items: center;
+    background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
-    color: #FFFFFF;
-    gap: 1rem;
-    margin-top: 9.38rem;
+    padding: 5.75rem 9.5rem;
 }
 
-.information__title {
-    font-size: 3.25rem;
+.main__title {
+    color: #464646;
+    font-size: 1.125rem;
     font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 
-.information__strong {
-    font-size: 1.375rem;
-    font-weight: 700;
+.form__login {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 40%;
 }
 
-.information__button {
+.form__input {
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    border-radius: .25rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.form__input::placeholder {
+    color: #A2A2A2;
+    font-size: 1rem;
+}
+
+.form__input:focus {
+    outline-style: none;
+}
+
+.form__button {
     background-color: #2A7AE4;
     border: none;
     color: #FFFFFF;
+    font-size: 1rem;
     padding: 1rem;
-    width: max-content;
 }
 
-.information__button:hover {
+.form__button:hover {
     background-color: #5595E9;
     cursor: pointer;
     transition: all .5s;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 9.5rem;
-}
-
-.products__section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4rem;
-}
-
-.products__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.product__see-all-link {
-    align-items: center;
-    color: #2A7AE4;
-    display: flex;
-    font-size: 1rem;
-    font-weight: 700;
-    gap: .5rem;
-    text-decoration: none;
-}
-
-.products__title {
-    color: #464646;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.products {
-    display: flex;
-    justify-content: space-between;
-}
-
-.product {
-    display: flex;
-    flex-direction: column;
-}
-
-.product__image {
-    width: 176px;
-
-}
-
-.product__information {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    margin-top: .5rem;
-}
-
-.product__title {
-    color: #464646;
-    font-size: .875rem;
-    font-weight: 500;
-}
-
-.product__price {
-    color: #464646;
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.product__link {
-    color: #2A7AE4;
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
 }
 
 footer {

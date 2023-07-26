@@ -23,7 +23,6 @@ header {
 .search__input {
     background-color: transparent;
     border: none;
-    color: #A2A2A2;
     font-size: .875rem;
     width: 25vw;
 }
@@ -74,45 +73,32 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 9.5rem;
+}
+
+.products__section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.products__top {
+    display: flex;
     align-items: center;
-    background-color: #F5F5F5;
-    display: flex;
-    flex-direction: column;
-    padding: 5.75rem 9.5rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
-.main__title {
+
+.products__title {
     color: #464646;
-    font-size: 1.125rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
 }
 
-.form__login {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 40%;
-}
-
-.form__input {
-    border: none;
-    border-bottom: 1px solid #C8C8C8;
-    border-radius: .25rem;
-    font-size: 1rem;
-    padding: 1rem;
-}
-
-.form__input::placeholder {
-    color: #A2A2A2;
-    font-size: 1rem;
-}
-
-.form__input:focus {
-    outline-style: none;
-}
-
-.form__button {
+.products__add-product-button {
     background-color: #2A7AE4;
     border: none;
     color: #FFFFFF;
@@ -120,10 +106,57 @@ main {
     padding: 1rem;
 }
 
-.form__button:hover {
+.products__add-product-button:hover {
     background-color: #5595E9;
     cursor: pointer;
     transition: all .5s;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+.product__div-image {
+    width: 176px;
+    height: 174px;
+    overflow: hidden;
+}
+
+.product__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product__information {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+
+.product__title {
+    color: #464646;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.product__price {
+    color: #464646;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.product__link {
+    color: #2A7AE4;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 footer {
